@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        
+        <title>How many fingers am I holding up?</title>
+        
+    </head>
+
+    <body>
+    
+        <p>How many fingers am I holding up?</p>
+        
+        <p><input type="text" id="try"> <button id="checkTry">Guess!</button></p>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("checkTry").onclick = function() {
+                
+                var randomNumber = Math.random();
+                
+                randomNumber = randomNumber * 6;
+                
+                randomNumber = Math.floor(randomNumber);
+                
+                if (document.getElementById("try").value == randomNumber) {
+                    
+                    alert("Excellent! You guessed well!");
+                    
+                } else {
+                    
+                    alert(Sorry! The number was " + randomNumber);
+                    
+                }
+                
+            }
+            </script>
+        
+    </body>
+
+</html>
